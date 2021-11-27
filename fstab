@@ -14,4 +14,4 @@ UUID=C106-CDE2  /boot/efi       vfat    umask=0077      0       1
 UUID=a31549fb-85f2-47a9-996e-97d6f45ccabb     /home     ext4     nodev,nosuid     0     2
 
 # storage mount
-UUID=B096E53296E4F9AC /media/storage/    ntfs-3g        auto,user,rw 0 0
+UUID=B096E53296E4F9AC /home/neo/Shared\040Space    ntfs-3g        auto,user,rw 0 0
