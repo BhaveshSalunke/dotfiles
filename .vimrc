@@ -29,7 +29,6 @@ set nobackup
 set nowrap
 
 " PATHOGEN 
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -61,11 +60,8 @@ if (empty($TMUX))
   endif
 endif
 
-"------------
-
-" PLUGINS ---------------------------------------------------------------- 
-"   { :source % }
-"   { :PlugInstall }
+"------------ PLUGINS ------------------------------------------ 
+# Make sure that you have 'vim-plug' installed. 
 
 call plug#begin('~/.vim/plugged')
 
@@ -74,9 +70,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim' "bottom highlighted line 
     Plug 'udalov/kotlin-vim'
     Plug 'Raimondi/delimitMate' "Braces assistance 
-call plug#end()
 
-" ----------------------------------------------------------------
+call plug#end()
+"----------------------------------------------------------------·
+
 set background=dark
 colorscheme gruvbox
-
