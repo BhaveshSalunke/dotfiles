@@ -37,10 +37,6 @@ set formatoptions=tcroq
 set hlsearch
 set ruler
 set laststatus=2
-map <F2> [c:cp<RETURN>
-map <F3> ]c:cn<RETURN>
-set list listchars=tab:»·,trail:·
-
 set backspace=indent,eol,start
 set fo+=tcroqnvl1
 set modeline
@@ -49,30 +45,19 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set cindent
-set cinoptions=(0
-"-----------------
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
 
-"------------ PLUGINS ------------------------------------------ 
-# Make sure that you have 'vim-plug' installed. 
+
+" PLUGINS ------------------------------------------------------- 
 
 call plug#begin('~/.vim/plugged')
-
-    "Plug 'flazz/vim-colorschemes'
-    Plug 'morhetz/gruvbox'
-    Plug 'itchyny/lightline.vim' "bottom highlighted line 
-    Plug 'udalov/kotlin-vim'
-    Plug 'Raimondi/delimitMate' "Braces assistance 
+   
+	Plug 'flazz/vim-colorschemes'
+	Plug 'morhetz/gruvbox'
+	Plug 'itchyny/lightline.vim' "bottom highlighted line 
+	Plug 'Raimondi/delimitMate' "Braces assistance 
 
 call plug#end()
-"----------------------------------------------------------------·
+"----------------------------------------------------------------
 
 set background=dark
 colorscheme gruvbox
